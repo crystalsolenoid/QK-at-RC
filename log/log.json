@@ -1,6 +1,6 @@
 {
   "layout": "layouts/log.njk",
   "tags": ["log"],
-  "permalink": "log/{{ day | slugify }}/"
+  "permalink": "log/{{ day | slugify }}/",
   "date": "git Created"
 }
