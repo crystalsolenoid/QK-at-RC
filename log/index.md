@@ -8,5 +8,5 @@ permalink: log/
 # Daily Log
 
 {%- for entry in collections.log %}
-* [{{ entry.page.date | postDate }}]({{ entry.page.url }})
+* [{{ entry.data.title }}]({{ entry.page.url }})
 {%- endfor %}
