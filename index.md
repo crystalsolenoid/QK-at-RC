@@ -5,4 +5,6 @@ title: Quinten's Blog
 
 # Quinten's Blog
 
-[Log](log)
+{%- for entry in collections.navigation %}
+* [{{ entry.data.title }}]({{ entry.page.url }})
+{%- endfor %}

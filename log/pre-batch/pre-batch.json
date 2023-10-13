@@ -1,3 +1,7 @@
 {
-  "tags": ["pre-batch"]
+  "tags": ["pre-batch"],
+  "eleventyComputed":
+    {
+      "title": "{{ date | postDate }}"
+    }
 }

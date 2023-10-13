@@ -1,10 +1,10 @@
 ---
 layout: layouts/collection.njk
-title: Daily Log
+title: Projects
 override:tags: [navigation]
-permalink: log/
+permalink: projects/
 ---
 
-{%- for entry in collections.log %}
+{%- for entry in collections.project %}
 * [{{ entry.data.title }}]({{ entry.page.url }})
 {%- endfor %}

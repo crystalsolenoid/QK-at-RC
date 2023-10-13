@@ -2,9 +2,5 @@
   "layout": "layouts/log.njk",
   "tags": ["log"],
   "permalink": "log/{{ day | slugify }}/",
-  "date": "git Created",
-  "eleventyComputed":
-    {
-      "title": "{{ date | postDate }}"
-    }
+  "date": "git Created"
 }
