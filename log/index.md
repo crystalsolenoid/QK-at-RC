@@ -6,5 +6,5 @@ override:tags: []
 ## Daily Log
 
 {%- for entry in collections.log %}
-* [{{ entry.page.date }}]({{ entry.page.url }})
+* [{{ entry.page.date | postDate }}]({{ entry.page.url }})
 {%- endfor %}
