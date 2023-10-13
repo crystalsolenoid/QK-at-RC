@@ -1,8 +1,8 @@
 ---
 layout: layouts/main.njk
-title: My Eleventy Project
+title: Quinten's Blog
 ---
 
-# My Eleventy Project
+# Quinten's Blog
 
-[Logs](/log)
+[Log](log)
