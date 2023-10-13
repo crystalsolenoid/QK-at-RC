@@ -2,6 +2,7 @@
 layout: layouts/collection.njk
 title: Daily Log
 override:tags: [navigation]
+permalink: log/
 ---
 
 # Daily Log
