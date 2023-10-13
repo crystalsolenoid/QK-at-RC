@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: layouts/main.njk
 title: My Eleventy Project
 ---
 
