@@ -1,4 +1,3 @@
-// Import prior to `module.exports` within `.eleventy.js`
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
