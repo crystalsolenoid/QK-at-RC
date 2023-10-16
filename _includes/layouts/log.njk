@@ -7,14 +7,29 @@ layout: layouts/main.njk
   {{ content | safe }}
 </article>
 
+{% set firstPost = collections.log | first %}
+{% set previousPost = collections.log| getPreviousCollectionItem %}
+{% set nextPost = collections.log | getNextCollectionItem %}
+{% set latestPost = collections.log | last %}
 <footer>
   <nav>
+  <h2>Daily Log Navigation</h2>
     <ol>
-      <li><a>First</a></li>
-      <li><a>Previous</a></li>
+      <li>
+      {% if firstPost %}First: <a href="{{ firstPost.url }}">{{ firstPost.data.title }}</a>{% endif %}
+      </li>
+      <li>
+      {% if previousPost %}Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+      </li>
       <li><a href='..'>Index</a></li>
-      <li><a>Next</a></li>
-      <li><a>Latest</a></li>
+      <li>
+{% if nextPost %}
+Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+{% endif %}
+      </li>
+      <li>
+      {% if latestPost %}Latest: <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a>{% endif %}
+      </li>
     </ol>
   </nav>
 </footer>
