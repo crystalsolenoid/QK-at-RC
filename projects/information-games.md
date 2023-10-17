@@ -1,5 +1,7 @@
 ---
 title: Information Games
+tags:
+  - root-project
 ---
 
 Back in 2018, I was in my last year of my Physics major. I was finally taking quantum mechanics. At the same time, I was on another guessing game kick. (I've always loved to program guessing games because they are entertaining, but easy to implement with just a console-based UI.) I was taking another stab at implementing the pen-and-paper game [Cows and Bulls](https://en.wikipedia.org/wiki/Bulls_and_Cows). This game is also known as MOO, and was very trendy with early computer users back when they were as big as rooms. Mastermind and Wordle are two other popular implementations of this game.
