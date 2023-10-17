@@ -1,0 +1,12 @@
+@media screen {
+  html {
+    margin: auto;
+    max-width: 45em;
+    padding: 0 3%;
+  }
+
+  article {
+    margin: auto;
+    max-width: 36em;
+  }
+}
