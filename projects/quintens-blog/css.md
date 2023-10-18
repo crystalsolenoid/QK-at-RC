@@ -48,3 +48,45 @@ I've left in Seirdy's `padding: 0 3%;` line for the html selector. This, combine
 I've added a `margin: auto` line to the html selector so that the article element (and thus the body text) is centered.
 
 My navigation links are outside of the article element, so they are able to occupy a bit of extra width, and jut out to the side. I am not worrying about if I want to keep this yet, but I do think it's kind of pleasant.
+
+## Font and Line spacing
+
+I'm going to use Seirdy's [Code snippet 4](https://seirdy.one/posts/2020/11/23/website-best-practices/#zoom-and-font-size) as a starting point for my font styles.
+
+```css
+html {
+  font: 107.5%/1.5 sans-serif;
+}
+```
+
+### Font size
+
+In the past I've played around with [fluid typography](https://www.smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/) to make my site as reader-friendly as possible at a variety of screen sizes. It can be useful, because the font size that's easy on our eyes on a phone screen is different from on a computer.
+
+I think I will keep things simple this time, at least until I run into a problem. Seirdy suggests 107.5% in this snippet. When the default font size is the browser standard of 16px, a [font size converter](https://products.aspose.app/font/size-converter) says that will give us a resulting 17.2px font size.
+
+There is only one piece of advice Seirdy gives regarding choosing a default font size: be consistent with other similar websites. This way, users won't have to zoom in or out just for you.
+
+It is also important to be readable by default, though. Not everyone who uses the internet has the technical literacy to mess with default zoom settings. Someone might be borrowing a phone or using a library computer. I want my first impression to be a good one, so I care about those situations.
+
+I'm not sure! I will leave it at 107.5% until I've formed a different opinion, if ever. The most important factor for font size according to the WCAG is that you be able to zoom to at least 200%, and be able to do it without making the site unusable.
+
+### Font choice
+
+Keeping it simple with sans-serif at the moment. Seirdy suggests that this is better than system-ui because sometimes [system fonts will do funny things](https://infinnie.github.io/blog/2017/systemui.html) (which I still need to read) depending on the system language. That's a big potential problem because I want my website to be welcoming to people whose computer isn't set to English.
+
+I'm not satisfied with using sans-serif, though. I have my Firefox default font set to [APHont](https://www.fontspace.com/aphont-font-f4926) because I find it nice and readable. Before specifying a font on my website, it was rendering with APHont. After specifying sans-serif, it is now rendering as DejaVu Sans. It's fine, but it isn't respecting my preferences!
+
+Looking into the extra dialogue box of "advanced" font settings, Firefox is informing me that it had APHont only set as the default *serif* font, without telling me. Disappointing! I guess this was on the browser end, but I wonder how common this problem is.
+
+### Line spacing
+
+Upping the default line spacing for paragraph text can make things more readable. Seirdy also points out that [spacing](https://seirdy.one/posts/2020/11/23/website-best-practices/#spacing) can be an important way to improve the size of [tap targets](https://seirdy.one/posts/2020/11/23/website-best-practices/#tap-targets).
+
+For very large font sizes, 1.5 can be too much spacing, as demonstrated in [Using calc to figure out optimal line-height](https://kittygiraudel.com/2020/05/18/using-calc-to-figure-out-optimal-line-height/). It's an interesting article with great examples. I wish my site could address this. However I don't want to implement Jesús's proposed solution:
+
+```css
+line-height: calc(2px + 2ex + 2px);
+```
+
+because, as he points out, it is **font specific**. Different fonts have different ratios of the different aspects of height. I really care that my site isn't broken when someone switches fonts, so I don't think that the benefit here outweigh the risks.

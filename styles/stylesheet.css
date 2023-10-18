@@ -1,3 +1,7 @@
+html {
+  font: 107.5%/1.5 sans-serif;
+}
+
 @media screen {
   html {
     margin: auto;
