@@ -12,23 +12,20 @@ layout: layouts/main.njk
 {% set nextPost = collections.log | getNextCollectionItem %}
 {% set latestPost = collections.log | last %}
 <footer>
-  <nav>
-  <h2>Daily Log Navigation</h2>
+  <nav class="sequenceNav" aria-label="daily log entries">
     <ol>
       <li>
-      {% if firstPost %}First: <a href="{{ firstPost.url }}">{{ firstPost.data.title }}</a>{% endif %}
+      {% if firstPost %}<a href="{{ firstPost.url }}">first</a>{% endif %}
       </li>
       <li>
-      {% if previousPost %}Previous: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>{% endif %}
+      {% if previousPost %}<a href="{{ previousPost.url }}">previous</a>{% else %}no previous{% endif %}
       </li>
-      <li><a href='..'>Index</a></li>
+      <li><a href='..'>index</a></li>
       <li>
-{% if nextPost %}
-Next: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-{% endif %}
+      {% if nextPost %}<a href="{{ nextPost.url }}">next</a>{% else %}no next{% endif %}
       </li>
       <li>
-      {% if latestPost %}Latest: <a href="{{ latestPost.url }}">{{ latestPost.data.title }}</a>{% endif %}
+      {% if latestPost %}<a href="{{ latestPost.url }}">latest</a>{% endif %}
       </li>
     </ol>
   </nav>

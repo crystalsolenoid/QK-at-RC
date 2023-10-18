@@ -14,3 +14,16 @@ html {
     max-width: 36em;
   }
 }
+
+footer {
+  margin-top: 2rem;
+}
+
+nav.sequenceNav ol {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2ch;
+}
