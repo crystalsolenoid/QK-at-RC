@@ -1,7 +1,7 @@
 ---
 layout: layouts/collection.njk
 title: Daily Log
-override:tags: [navigation]
+override:tags: [navigation, home]
 permalink: log/
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: layouts/collection.njk
 title: Projects
-override:tags: [navigation]
+override:tags: [navigation, home]
 permalink: projects/
 ---
 

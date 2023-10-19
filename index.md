@@ -7,6 +7,6 @@ title: Quinten's Blog
 
 Let's see where this goes.
 
-{%- for entry in collections.navigation %}
+{%- for entry in collections.home %}
 * [{{ entry.data.title }}]({{ entry.page.url }})
 {%- endfor %}
