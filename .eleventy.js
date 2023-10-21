@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
   // Format dates to be shorter and more human-readable
@@ -6,4 +7,5 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_HUGE);
   });
   eleventyConfig.addPassthroughCopy("styles");
+  eleventyConfig.addPlugin(pluginRss);
 };
