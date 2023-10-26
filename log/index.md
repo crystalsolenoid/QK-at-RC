@@ -10,3 +10,5 @@ A daily development and study log.
 {%- for entry in collections.log reversed %}
 * [{{ entry.data.title }}]({{ entry.page.url }})
 {%- endfor %}
+
+[Atom Feed](/feed.xml)
