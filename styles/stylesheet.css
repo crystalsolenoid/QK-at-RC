@@ -6,7 +6,10 @@ html {
   html {
     margin: auto;
     max-width: 45em;
-    padding: 0 3%;
+    padding-inline: 3%;
+
+    padding-top: 1rem;
+    padding-bottom: 4rem;
   }
 
   article {

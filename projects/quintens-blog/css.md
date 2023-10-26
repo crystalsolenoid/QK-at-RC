@@ -12,12 +12,17 @@ For this section, I have tweaked Seirdy's [Line length](https://seirdy.one/posts
 
 The other change I made is to add an auto-margin to the html selector. I'm not sure if this should be in the media query or outside of it, but I think it's okay for now.
 
+Instead of having zero padding for the top and bottom, I have added a little at the top, and a lot at the bottom. This is because I was encountering some problems with my header and footer navigation being too close to the edge of the screen on mobile. Either a browser footer covers my footer, or it's too close for comfortable tapping. I don't want buttons to be too close together, because it's an unnecessary barrier for people visiting the site.
+
 ```CSS
 @media screen {
   html {
     max-width: 45em;
-    padding: 0 3%;
     margin: auto;
+    padding-inline: 3%;
+
+    padding-top: 1rem;
+    padding-bottom: 4rem;
   }
 
   article {
