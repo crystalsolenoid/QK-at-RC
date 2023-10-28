@@ -7,8 +7,15 @@ permalink: log/
 
 A daily development and study log.
 
+<ul class=summary-directory>
 {%- for entry in collections.log reversed %}
-* [{{ entry.data.title }}]({{ entry.page.url }})
+<li>
+  <a href="{{ entry.page.url }}">{{ entry.data.title }}</a>
+  <p>
+    {{ entry.data.page.excerpt }}
+  </p>
+</li>
 {%- endfor %}
+</ul>
 
-[Atom Feed](/feed.xml)
+<a href=/feed.xml>Atom Feed</a>
