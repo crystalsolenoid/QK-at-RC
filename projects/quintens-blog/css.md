@@ -95,3 +95,19 @@ line-height: calc(2px + 2ex + 2px);
 ```
 
 because, as he points out, it is **font specific**. Different fonts have different ratios of the different aspects of height. I really care that my site isn't broken when someone switches fonts, so I don't think that the benefit here outweigh the risks.
+
+## Lists
+
+### List of links with summaries spacing
+
+I've created a class `.summary-directory` for use in my [Log index](/log/) so that I can give an easy-to-understand amount of spacing for my long list of entries. Previously, this list was just a list of links with default spacing, which creates [tap targets](https://seirdy.one/posts/2020/11/23/website-best-practices/#tap-targets) which are way too close together. In order to increase the spacing of the tap targets and the legibility, I have two strategies:
+
+First, I've added summaries to each entry, and have put these on a new line below each link on the index. This (non-link) text helps create a buffer between links even with no styling. It also really helps readability to see a preview of each entry, because my date-titles are cryptic.
+
+Second, I've increased the spacing with the following CSS rule. Each entry summary, the thing being selected with `.summary-directory p` (`.summary-directory` is on the `<ul>`), gets a little space between it and its entry link, and a lot of space between it and the next entry link. This keeps it clear which link it is describing.
+
+```css
+.summary-directory p {
+  margin-block: 0.5rem 1.5rem;
+}
+```
