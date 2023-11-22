@@ -1,5 +1,7 @@
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const Image = require("@11ty/eleventy-img");
+const path = require('node:path');
 
 module.exports = function(eleventyConfig) {
   // Format dates to be shorter and more human-readable
@@ -12,5 +14,35 @@ module.exports = function(eleventyConfig) {
     excerpt: true,
     // Optional, default is "---"
     excerpt_separator: "<!-- excerpt -->"
+  });
+
+  eleventyConfig.addShortcode("image", async function(src, alt) {
+    let imageDir = path.dirname(this.page.inputPath)
+    let imageSrc = `${imageDir}/${src}`;
+    if(alt === undefined) {
+			// You bet we throw an error on missing alt (alt="" works okay)
+			throw new Error(`Missing \`alt\` on myImage from: ${imageSrc}`);
+    }
+
+    let metadata = await Image(imageSrc, {
+      widths: [800],
+      formats: ["auto"],
+      urlPath: imageDir,
+      outputDir: "_site/" + imageDir,
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+
+        return `${name}-${width}w.${format}`;
+      }
+    });
+
+    if(metadata.jpeg) {
+      let small = metadata.jpeg[0];
+      return `<img src="/${small.url}" width="${small.width}" height="${small.height}" alt="${alt}">`;
+    } else if(metadata.png) {
+      let small = metadata.png[0];
+      return `<img src="/${small.url}" width="${small.width}" height="${small.height}" alt="${alt}">`;
+    }
   });
 };

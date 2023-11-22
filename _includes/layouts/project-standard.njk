@@ -1,0 +1,22 @@
+---
+layout: layouts/main.njk
+---
+<article>
+  <h1>{{ title }}</h1>
+
+  {% if screenshots %}
+    {% for img in screenshots %}
+      {% image img.src, img.alt %}
+    {% endfor %}
+  {% endif %}
+
+  {% if play %}
+    <a href=play/>play in the browser</a>
+  {% endif %}
+
+  {{ content | safe }}
+
+</article>
+<footer>
+<a href=..>Back</a>
+</footer>
