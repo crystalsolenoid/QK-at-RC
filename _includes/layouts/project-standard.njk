@@ -11,7 +11,15 @@ layout: layouts/main.njk
   {% endif %}
 
   {% if play %}
-    <a href=play/>play in the browser</a>
+    <p>
+      <a href=play/>play in the browser</a>
+    </p>
+  {% endif %}
+
+  {% if github %}
+    <p>
+      <a href={{ github }}>view github repository</a>
+    </p>
   {% endif %}
 
   {{ content | safe }}

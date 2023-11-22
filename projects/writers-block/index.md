@@ -7,5 +7,6 @@ tags:
 screenshots:
   - src: "keymash.png"
     alt: "Pixelated graph paper with keymashing covering most of the page. There are no spaces between the letters."
+github: https://github.com/crystalsolenoid/writers-block-simulator
 play: true
 ---
