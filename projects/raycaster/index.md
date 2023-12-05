@@ -4,6 +4,8 @@ tags:
     - rust
     - graphics
 layout: layouts/project-standard.njk
+languages:
+    - rust
 screenshots:
   - src: "column.png"
     alt: "Left: A distorted raycast rendering with flat colors. A gray column looms ahead in a dark room with bright golden walls. Right: An overhead view of a larger area, with a gray square casting a dramatic shadow in a cone of brown."

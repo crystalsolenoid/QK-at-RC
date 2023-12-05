@@ -3,6 +3,8 @@ title: One Dot
 tags:
     - rust
     - creative-coding
+languages:
+    - rust
 layout: layouts/project-standard.njk
 screenshots:
   - src: "onedot.png"
