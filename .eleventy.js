@@ -47,6 +47,9 @@ module.exports = function(eleventyConfig) {
     } else if(metadata.png) {
       let small = metadata.png[0];
       return `<img src="/${small.url}" width="${small.width}" height="${small.height}" alt="${alt}">`;
+    } else if(metadata.gif) {
+      let small = metadata.gif[0];
+      return `<img src="/${small.url}" width="${small.width}" height="${small.height}" alt="${alt}">`;
     }
   });
 };
