@@ -13,7 +13,7 @@ screenshots:
 github: https://github.com/JohnEdChristensen/pyxel_playground/blob/main/src/3D.py
 play: false
 started: 2023-11-03T12:00:00-08:00
-status: In progress.
+status: In progress
 ---
 
 A triangle [rasterizer](https://en.wikipedia.org/wiki/Rasterisation) using [Pyxel](https://github.com/kitao/pyxel) as a graphics library.

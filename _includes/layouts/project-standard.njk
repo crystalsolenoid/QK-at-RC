@@ -33,6 +33,14 @@ layout: layouts/main.njk
   {% endif %}
   {% if status %}
       {{ status }}
+      {%- if ended %}
+        on {{ ended | fullDate }}
+      {%- elif ended_month and ended_year -%}
+        in {{ ended_month }}, {{ ended_year }}
+      {%- elif ended_year -%}
+        in {{ ended_year }}
+      {%- endif -%}
+      .
   {% endif %}
     </p>
   {% endif %}

@@ -12,7 +12,7 @@ screenshots:
 github: https://github.com/crystalsolenoid/rust-raycaster
 play: false
 started: 2023-11-24T14:00:00-08:00
-status: In progress.
+status: In progress
 ---
 
 ## About
