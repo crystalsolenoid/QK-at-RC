@@ -12,13 +12,28 @@ layout: layouts/main.njk
 
   {% if play %}
     <p>
-      <a href=play/>play in the browser</a>
+      <a href=play/>play in the browser (under construction)</a>
     </p>
   {% endif %}
 
   {% if github %}
     <p>
       <a href={{ github }}>view github repository</a>
+    </p>
+  {% endif %}
+
+  {% if started or status %}
+    <p>
+  {% if started %}
+      Started on {{ started | fullDate }}.
+  {% elif started_month and started_year %}
+      Started in {{ started_month }}, {{ started_year }}.
+  {% elif started_year %}
+      Started in {{ started_year }}.
+  {% endif %}
+  {% if status %}
+      {{ status }}
+  {% endif %}
     </p>
   {% endif %}
 

@@ -8,6 +8,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_HUGE);
   });
+  eleventyConfig.addFilter("fullDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
+  });
   eleventyConfig.addPassthroughCopy("styles");
 //  eleventyConfig.addPassthroughCopy("**/play/*.{js, wasm, tic}");
   eleventyConfig.addPlugin(pluginRss);
