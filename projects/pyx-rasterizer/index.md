@@ -1,5 +1,5 @@
 ---
-title: Triangle Renderer
+title: Pyx Rasterizer
 tags:
     - python
     - graphics
