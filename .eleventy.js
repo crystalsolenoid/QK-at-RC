@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_HUGE);
   });
   eleventyConfig.addPassthroughCopy("styles");
+//  eleventyConfig.addPassthroughCopy("**/play/*.{js, wasm, tic}");
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
