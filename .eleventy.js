@@ -13,6 +13,7 @@ module.exports = function(eleventyConfig) {
   });
   eleventyConfig.addPassthroughCopy("styles");
 //  eleventyConfig.addPassthroughCopy("**/play/*.{js, wasm, tic}");
+  eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
