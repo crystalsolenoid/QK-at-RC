@@ -8,10 +8,14 @@ layout: layouts/project-standard.njk
 languages:
     - python
 screenshots:
-  - src: "down-tris.png"
+  - src: "screenshots/cubes.png"
+    alt: "Two low-resolution cubes are floating in space at different orientations. Each face is a different color."
+  - src: "screenshots/zbuff.png"
+    alt: "Two cubes with their faces covered in dense lines of repeating patterns of color. Faces closer to parallel with the screen have thicker lines."
+  - src: "screenshots/down-tris.png"
     alt: "A smattering of low-resolution triangles overlap one another. They are varied in color and dimensions, but all have one side that is horizontal on top."
 github: https://github.com/JohnEdChristensen/pyxel_playground/blob/main/src/3D.py
-play: false
+play: true
 started: 2023-11-03T12:00:00-08:00
 status: In progress
 ---
