@@ -11,9 +11,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("fullDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
   });
-  eleventyConfig.addPassthroughCopy("styles");
-//  eleventyConfig.addPassthroughCopy("**/play/*.{js, wasm, tic}");
-  eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("src/styles");
+  eleventyConfig.addPassthroughCopy("src/**/*.{js, wasm, tic}");
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.setFrontMatterParsingOptions({
     excerpt: true,
@@ -53,4 +52,10 @@ module.exports = function(eleventyConfig) {
       return `<img src="/${small.url}" width="${small.width}" height="${small.height}" alt="${alt}">`;
     }
   });
+  return {
+    dir: {
+      input: "src",
+      output: "_site"
+      }
+  }
 };
