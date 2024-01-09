@@ -4,7 +4,7 @@ tags:
     - bitsy
     - game
 layout: layouts/project-standard.njk
-screenshots:
+animations:
     - src: "FlickersFragrances.gif"
       alt: "A gloomy storefront with rows and rows of candles. A dancing flame is managing the cash register. Five creatures are waiting in line. Behind the counter, there is a small amount of the back room visible, with more shelves and a couch visible."
 #github: 

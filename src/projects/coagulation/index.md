@@ -4,7 +4,7 @@ tags:
     - bitsy
     - game
 layout: layouts/project-standard.njk
-screenshots:
+animations:
     - src: "Coagulation.gif"
       alt: "Tiny pink worms inhabit a pixelated subterranean network of caves. One of the worms is wiggling."
 #github: 

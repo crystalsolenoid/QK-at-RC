@@ -4,7 +4,7 @@ tags:
     - bitsy
     - demo
 layout: layouts/project-standard.njk
-screenshots:
+animations:
     - src: "entrance.gif"
       alt: "A miniscule yellow bat is flying at the top of a pepto-bismol pink cavern. Cyan dots overlay the pink for the walls, and shimmering cyan mist shrouds the exits. A dancing yellow square sits below, on a ledge."
 #github: 

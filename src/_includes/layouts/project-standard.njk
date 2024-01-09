@@ -10,6 +10,12 @@ layout: layouts/main.njk
     {% endfor %}
   {% endif %}
 
+  {% if animations %}
+    {% for img in animations %}
+      <image src="{{img.src}}" alt="{{img.alt}}">
+    {% endfor %}
+  {% endif %}
+
   {% if play %}
     <p>
       <a href=play/>play in the browser</a>
