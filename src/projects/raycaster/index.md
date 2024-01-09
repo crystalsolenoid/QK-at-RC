@@ -7,6 +7,8 @@ layout: layouts/project-standard.njk
 languages:
     - rust
 screenshots:
+  - src: "flat-textures.png"
+    alt: "Left: A raycast rendering of a room with silhouettes of cubes that are filled in with a gold brick texture. Right: An overhead view of the same room, with a cone of brown stopping at little golden squares, or the wall behind."
   - src: "column.png"
     alt: "Left: A distorted raycast rendering with flat colors. A gray column looms ahead in a dark room with bright golden walls. Right: An overhead view of a larger area, with a gray square casting a dramatic shadow in a cone of brown."
 github: https://github.com/crystalsolenoid/rust-raycaster
