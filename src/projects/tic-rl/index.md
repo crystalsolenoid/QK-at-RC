@@ -15,6 +15,7 @@ play: true
 started: 2018-08-04T12:00:00-08:00
 ended: 2019-08-09T12:00:00-08:00
 status: Retired
+summary: A TIC-80 experiment in lighting and procedural generation inspired by classic roguelikes.
 ---
 
 A roguelike engine developed in 2018 and 2019 in the TIC-80 with Lua. Has a custom line-of-sight algorithm, basic map generation, and great atmosphere.

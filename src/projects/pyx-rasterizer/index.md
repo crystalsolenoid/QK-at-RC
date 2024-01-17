@@ -18,6 +18,7 @@ github: https://github.com/JohnEdChristensen/pyxel_playground/blob/main/src/3D.p
 play: true
 started: 2023-11-03T12:00:00-08:00
 status: In progress
+summary: Rendering low-res, 16-color 3D models in Python to better understand raster graphics.
 ---
 
 A triangle [rasterizer](https://en.wikipedia.org/wiki/Rasterisation) using [Pyxel](https://github.com/kitao/pyxel) as a graphics library.

@@ -12,6 +12,7 @@ play: true
 started: 2020-12-26T12:00:00-08:00
 ended: 2021-01-03T12:00:00-08:00
 status: Finished
+summary: Help customers in a spooky candle store in this Bitsy game.
 ---
 
 Flicker is a little spark working in their bustling shop that caters to some... curious customers. Help Flicker find everyone's favorite spooky scented candles during the midnight rush!

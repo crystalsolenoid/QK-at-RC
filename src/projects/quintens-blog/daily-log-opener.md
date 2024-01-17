@@ -4,6 +4,7 @@ tags:
   - shell
   - small-project
   - post
+summary: Explaining a bash script for daily writing.
 ---
 
 On [October 28th](/log/2023-10-28), I mentioned that I had written a little script that allowed me to quickly and easily create or open my daily log entry for the day. I was inspired to do this because of a similar feature in [Obsidian](https://obsidian.md/).

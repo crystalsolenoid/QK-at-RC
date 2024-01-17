@@ -14,6 +14,7 @@ play: true
 #started: 2021-11-30T12:00:00-08:00
 ended: 2018-05-27T12:00:00-08:00
 status: Finished
+summary: A little arcade puzzle game in the PICO-8 with progressive difficulty, sound, and music.
 ---
 
 ## Release notes from [Lexaloffle](https://www.lexaloffle.com/bbs/?tid=31341)

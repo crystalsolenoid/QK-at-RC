@@ -12,6 +12,7 @@ play: true
 started: 2021-11-30T12:00:00-08:00
 ended: 2022-01-02T12:00:00-08:00
 status: Finished
+summary: A Bitsy game with a mystery about worms.
 ---
 
 You are a wiggly worm about to plan a mushroom party for your friends! However, they are acting... strangely... can you save them?
