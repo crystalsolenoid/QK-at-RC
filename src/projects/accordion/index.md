@@ -11,7 +11,7 @@ github: https://github.com/crystalsolenoid/accordion_task
 #play: true
 started: 2024-01-15T12:00:00-08:00
 #ended: 2019-08-09T12:00:00-08:00
-status: In Progress
+status: In progress
 summary: A TUI-based personal routine manager in Rust.
 ---
 

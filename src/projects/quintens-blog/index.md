@@ -2,6 +2,7 @@
 title: Quinten's Blog
 tags:
   - root-project
+  - web
 summary: Writing about this very website.
 ---
 

@@ -4,6 +4,7 @@ title: Writer's Block Simulator
 tags:
   - tic80
   - creative-coding
+  - game
 languages:
   - lua
 screenshots:

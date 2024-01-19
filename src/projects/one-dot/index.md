@@ -3,6 +3,7 @@ title: One Dot
 tags:
     - rust
     - creative-coding
+    - demo
 languages:
     - rust
 layout: layouts/project-standard.njk

@@ -3,6 +3,7 @@ title: Rust Raycaster
 tags:
     - rust
     - graphics
+    - demo
 layout: layouts/project-standard.njk
 languages:
     - rust

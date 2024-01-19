@@ -4,6 +4,7 @@ tags:
     - lua
     - graphics
     - tic-80
+    - demo
 layout: layouts/project-standard.njk
 languages:
     - lua
