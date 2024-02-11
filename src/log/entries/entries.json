@@ -2,6 +2,6 @@
   "tags": ["pre-batch"],
   "eleventyComputed":
     {
-      "title": "{{ date | postDate }}"
+      "title": "{% if title%}{{ title }}: {% endif %}{{ date | postDate }}"
     }
 }
