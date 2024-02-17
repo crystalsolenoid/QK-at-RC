@@ -12,7 +12,7 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_FULL);
   });
   eleventyConfig.addPassthroughCopy("src/styles");
-  eleventyConfig.addPassthroughCopy("src/**/*.{js,wasm,tic}");
+  eleventyConfig.addPassthroughCopy("src/**/*.{js,wasm,tic,webm}");
   // just pass through gifs instead of compressing,
   // because eleventy image plugin gets rid of
   // the animation!
