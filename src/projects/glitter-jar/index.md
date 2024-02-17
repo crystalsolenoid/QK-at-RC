@@ -19,7 +19,7 @@ video: "glitter-jar.webm"
 started: 2019-03-07T12:00:00-08:00
 ended: 2019-03-18T12:00:00-08:00
 status: Completed
-summary: Glitter jar using tricks instead of simulation to get a convincing effect
+summary: Glitter jar using tricks instead of simulation to get a convincing effect.
 ---
 
 [video]({{video}}) (framerate looks off, but you can get an idea)
