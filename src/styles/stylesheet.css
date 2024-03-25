@@ -39,3 +39,22 @@ img {
   width: 100%;
   height: auto;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: #E9E9E9;
+    background-color: #191919;
+  }
+
+  a {
+    color: #91b6ff;
+  }
+
+  a:visited {
+    color: #f091ff;
+  }
+
+  a:hover {
+    color: #ff9191;
+  }
+}
