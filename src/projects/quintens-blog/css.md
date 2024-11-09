@@ -1,7 +1,7 @@
 ---
 title: CSS Breakdown
 summary: Discussion of my CSS decisions on this website in painstaking detail.
-tags: web
+tags: tool
 ---
 
 This is a breakdown of the CSS used on my website. Other details about the site can be found at the [website project page](/projects/quintens-blog).

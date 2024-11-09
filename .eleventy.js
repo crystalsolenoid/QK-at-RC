@@ -3,7 +3,29 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 const path = require('node:path');
 
+// For collections merging
+// https://stackoverflow.com/a/1584377
+const merge = (a, b, predicate = (a, b) => a === b) => {
+    const c = [...a]; // copy to avoid side effects
+    // add all items from B to copy C if they're not already present
+    b.forEach((bItem) => (c.some((cItem) => predicate(bItem, cItem)) ? null : c.push(bItem)))
+    return c;
+}
+
 module.exports = function(eleventyConfig) {
+  // Define a collection that combines tools and web tags
+  const tagMap = {
+    toolweb: [["web", "project"], ["tool", "project"]],
+  };
+  for (const [name, tags] of Object.entries(tagMap)) {
+    eleventyConfig.addCollection(name, function (collectionsApi) {
+      let collections = tags.map((x) => collectionsApi.getFilteredByTags(...x));
+      // TODO: to have more than two "OR" filters, need to
+      // modify the merge function
+      let collection = merge(...collections);
+      return collection;
+    });
+  }
   // Format dates to be shorter and more human-readable
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_HUGE);

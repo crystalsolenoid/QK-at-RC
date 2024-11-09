@@ -67,7 +67,7 @@ This section of the site will be organized and written more like <a href="https:
 <h2>Tools and Web</h2>
 
 <ul class=summary-directory>
-{%- for entry in collections.web reversed %}
+{%- for entry in collections.toolweb reversed %}
 {%- if entry.data.status != "In progress" %}
 <li>
   <a href="{{ entry.page.url }}">{{ entry.data.title }}</a>

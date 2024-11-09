@@ -4,7 +4,7 @@ tags:
   - shell
   - small-project
   - post
-  - web
+  - tool
 summary: Explaining a bash script for daily writing.
 ---
 
