@@ -17,9 +17,12 @@ screenshots:
 github: https://github.com/JohnEdChristensen/pyxel_playground/blob/main/src/3D.py
 play: true
 started: 2023-11-03T12:00:00-08:00
-status: In progress
+ended: 2024-06-15T12:00:00-08:00
+status: switched to Rust
 summary: Rendering low-res, 16-color 3D models in Python to better understand raster graphics.
 ---
+
+This project is continued in [Pyx Rusterizer](/projects/pyx-rusterizer) after we decided to switch to Rust for ease of debugging and maintainability.
 
 A triangle [rasterizer](https://en.wikipedia.org/wiki/Rasterisation) using [Pyxel](https://github.com/kitao/pyxel) as a graphics library.
 
