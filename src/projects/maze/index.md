@@ -5,6 +5,7 @@ tags:
     - screensaver
     - graphics
     - lua
+    - post
 layout: layouts/project-standard.njk
 screenshots:
     - src: "3d-maze-rat.png"
