@@ -12,7 +12,8 @@ languages:
 github: https://github.com/crystalsolenoid/quins_varvara
 play: false
 started: 2024-10-25T12:00:00-08:00
-status: In progress
+ended: 2025-01-06T12:00:00-08:00
+status: On hiatus
 summary: My little attempt at a uxn computer emulator
 ---
 
