@@ -9,12 +9,14 @@ tags: home
 ## The Author
 
 Hey, I'm Quinten. I'm interested in:
-- computer graphics
 - unexpected applications of mathematics
-- procedurally generated art
+- Rust
 - web accessibility
+- self hosting
+- learning how things work
+- computer graphics
+- hardware??
 - game development under creative constraints
-- scientific computing
 - fiber arts
 
 My timeline:
@@ -26,7 +28,7 @@ My timeline:
 6. laser operator
 7. ???
 
-Right now I listen to podcasts (tech, design, history, etc.) for 10 hours a day at work, and then program for fun on my three-day weekends.
+Right now I listen to podcasts (tech, design, history, etc.) for 10 hours a day at work, program over SSH on my phone during my breaks, and then program and write for fun on my three-day weekends.
 
 I live in the Pacific Northwest. My favorite bird is the green heron because it's shy, has bright orange eyes, and looks like it slouches when it flies. The first time I saw one we didn't notice each other until I was very close because it was pouring. It looked up at me from the creek with its [feathers standing straight up](https://nas-national-prod.s3.amazonaws.com/h_a1_4132_2_green-heron_barbara_houston_kk_adult.jpg) like a little dinosaur.
 
