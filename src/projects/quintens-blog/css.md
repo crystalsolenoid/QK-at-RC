@@ -139,3 +139,17 @@ There is a danger that the word wrap from `white-space` may still fail to wrap. 
 ```
 
 There is still more I want to do with code blocks. I want a subtle way to more clearly delineate them from the surrounding text. I want to explore my options for full-bleed code blocks to avoid unneeded wrapping on wider screens. (If I wanted to do it without hacks, I think I might have to restructure my current CSS?) But this is a good start.
+
+## Navigation when printing
+
+I have hidden navigation in the bottom footer when printing because it isn't useful information when reading on a page. Examples of this right now are "back" and "first previous inxed next latest".
+
+```css
+@media print {
+  footer nav {
+    display: none;
+  }
+}
+```
+
+I've kept header navigation visible because "Quinten's Blog Home" is useful: it tells you which website you're on. Eventaully, the header navigation might become a breadcrumb navigation. This could also be useful to understand the context of the page.
