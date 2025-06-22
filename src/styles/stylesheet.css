@@ -2,6 +2,13 @@ html {
   font: 107.5%/1.5 sans-serif;
 }
 
+@media print {
+  footer nav {
+    /* Hide "first prev index next latest" for print. */
+    display: none;
+  }
+}
+
 @media screen {
   html {
     margin: auto;
