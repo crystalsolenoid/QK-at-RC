@@ -113,3 +113,29 @@ Second, I've increased the spacing with the following CSS rule. Each entry summa
   margin-block: 0.5rem 1.5rem;
 }
 ```
+
+## Code blocks
+
+To avoid horizontal scroll for the whole page, especially on mobile, I need to either wrap the code blocks or give them a horizontal overflow. As for what I prefer personally, I think it actually depends on the language. I feel disoriented reading languages with meaningful whitespace and line breaks that have been wrapped like Python or shell commands. Wrapping HTML, for example, feels much less bad.
+
+I am worried about making people scroll, though. It can be difficult to track lines. On some devices, it's more of a pain than others. I think that until I learn more, it's less risky to just wrap.
+
+```css
+pre {
+  white-space: pre-wrap;
+}
+```
+
+I chose to put this property on the `pre` tag instead of the enclosed `code` tag, because I may someday want to preformat something that isn't code (like a TUI output, or something). That may or not play nicely with wrapping. It might make sense to have a `no-wrap` class for exceptions later. But at least this way I won't accidentally have four-way scrolling on mobile in the mean time!
+
+There is a danger that the word wrap from `white-space` may still fail to wrap. It doesn't address very long single words. As a failsafe, I added horizontal scrolling for overflow (for screens only, because my testing on Firefox showed that it can cut off text when printing.)
+
+```css
+@media screen {
+  pre {
+    overflow-x: auto;
+  }
+}
+```
+
+There is still more I want to do with code blocks. I want a subtle way to more clearly delineate them from the surrounding text. I want to explore my options for full-bleed code blocks to avoid unneeded wrapping on wider screens. (If I wanted to do it without hacks, I think I might have to restructure my current CSS?) But this is a good start.

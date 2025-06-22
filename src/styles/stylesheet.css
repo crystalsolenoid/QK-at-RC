@@ -23,6 +23,10 @@ html {
     margin: auto;
     max-width: 36em;
   }
+
+  pre {
+    overflow-x: auto;
+  }
 }
 
 footer {
@@ -45,6 +49,10 @@ nav.sequenceNav ol {
 img {
   width: 100%;
   height: auto;
+}
+
+pre {
+  white-space: pre-wrap;
 }
 
 @media (prefers-color-scheme: dark) {
