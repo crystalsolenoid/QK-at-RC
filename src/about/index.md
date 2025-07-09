@@ -26,7 +26,8 @@ My timeline:
 4. the Recurse Center
 5. manufacturing for a neuroscience startup
 6. laser operator
-7. ???
+7. digitizer
+8. ???
 
 Right now I listen to podcasts (tech, design, history, etc.) for 10 hours a day at work, program over SSH on my phone during my breaks, and then program and write for fun on my three-day weekends.
 
