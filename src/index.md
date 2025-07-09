@@ -1,5 +1,5 @@
 ---
-layout: layouts/main.njk
+layout: layouts/home.njk
 title: Quinten's Blog
 ---
 
