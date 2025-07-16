@@ -15,6 +15,8 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^3.1.8"
+    "@11ty/eleventy-img": "^3.1.8",
+    "markdown-it-anchor": "^9.2.0",
+    "slugify": "^1.6.6"
   }
 }

@@ -27,6 +27,10 @@ html {
   pre {
     overflow-x: auto;
   }
+
+  .anchor span {
+    display: inline;
+  }
 }
 
 footer {
