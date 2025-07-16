@@ -27,10 +27,6 @@ html {
   pre {
     overflow-x: auto;
   }
-
-  .anchor span {
-    display: inline;
-  }
 }
 
 footer {
@@ -74,6 +70,27 @@ pre {
   }
 
   a:hover {
+  .header-anchor:hover, .header-anchor:focus {
     color: #ff9191;
   }
+}
+
+/* Anchor links should be more subtle than non-internal links. */
+.header-anchor:not(:hover, :focus),
+.header-anchor:visited:not(:hover, :focus) {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-anchor:hover, .header-anchor:focus {
+  text-decoration: underline;
+}
+
+.header-anchor:hover::before, .header-anchor:focus::before {
+  left: -1.5ex;
+  position: relative;
+  content: "#";
+  width: 0;
+  height: 0;
+  float: left;
 }
