@@ -59,22 +59,22 @@ pre {
 /* TODO light theme */
 /* I want more control so that I can give red-on-hover. */
 html {
-  color: #E9E9E9;
-  background-color: #191919;
+  color: #191919;
+  background-color: #F9F9F9;
 }
 
 a {
-  color: #91b6ff;
+  color: #003eba;
 }
 
 a:visited {
-  color: #f091ff;
+  color: #7d0091;
 }
 
 a:visited:hover, a:hover,
 a:visited:focus, a:focus,
 .header-anchor:hover, .header-anchor:focus {
-  color: #ff9191;
+  color: #960000;
 }
 
 @media (prefers-color-scheme: dark) {
