@@ -69,7 +69,8 @@ pre {
     color: #f091ff;
   }
 
-  a:hover {
+  a:visited:hover, a:hover,
+  a:visited:focus, a:focus,
   .header-anchor:hover, .header-anchor:focus {
     color: #ff9191;
   }
