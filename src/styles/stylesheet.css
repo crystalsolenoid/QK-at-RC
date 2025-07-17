@@ -3,7 +3,8 @@ html {
 }
 
 @media print {
-  footer nav {
+  footer nav,
+  .toc {
     /* Hide "first prev index next latest" for print. */
     display: none;
   }
@@ -53,6 +54,27 @@ img {
 
 pre {
   white-space: pre-wrap;
+}
+
+/* TODO light theme */
+/* I want more control so that I can give red-on-hover. */
+html {
+  color: #E9E9E9;
+  background-color: #191919;
+}
+
+a {
+  color: #91b6ff;
+}
+
+a:visited {
+  color: #f091ff;
+}
+
+a:visited:hover, a:hover,
+a:visited:focus, a:focus,
+.header-anchor:hover, .header-anchor:focus {
+  color: #ff9191;
 }
 
 @media (prefers-color-scheme: dark) {

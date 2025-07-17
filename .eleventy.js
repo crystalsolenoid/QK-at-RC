@@ -5,14 +5,10 @@ const path = require('node:path');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const slugify = require("slugify");
+const pluginTOC = require('eleventy-plugin-toc')
 
-const linkAfterHeader = markdownItAnchor.permalink.linkAfterHeader({
-  class: "anchor",
-  symbol: "<span hidden>#</span>",
-  style: "aria-labelledby",
-});
 const markdownItAnchorOptions = {
-  level: [2, 3],
+  level: [2, 3, 4],
   slugify: (str) =>
     slugify(str, {
       lower: true,
@@ -37,6 +33,7 @@ const merge = (a, b, predicate = (a, b) => a === b) => {
 }
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginTOC)
   // Define a collection that combines tools and web tags
   eleventyConfig.setLibrary("md", markdownLibrary);
   const tagMap = {
